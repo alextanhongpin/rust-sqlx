@@ -1,0 +1,12 @@
+[package]
+name = "test-sqlx"
+version = "0.1.0"
+authors = ["alextanhongpin <alextan220990@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlx = { git = "https://github.com/launchbadge/sqlx", default-features = false, features = [ "runtime-async-std", "macros", "uuid", "chrono", "postgres", "json" ] }
+async-std = { version = "1.6.2", features = [ "attributes" ] }
+uuid = "0.8.1"
